@@ -12,13 +12,13 @@ Time complexity - ◯(n²)
 
 we will use two pointer approach but first we need sort the array in ascending order.
 
-start will be first index and end will be last indext if we got sum of pair greater then terget will decrease the end-- or we got lower sum we will increase the start++ or we got the target means target == sum we will return the index of pair
+start will be first index and end will be last index if we got sum of pair greater then target will decrease the end-- or we got lower sum we will increase the start++ or we got the target means target == sum we will return the index of pair
 
 Time Complexity - ◯(nlogn)
 
 ## Optimized approach 
 
-in this approch we will use a single loop for choosing first element then we calculate the second element by using given target so second element will be second = target-first and then we have to choose first value by loop and then we will find the second element in unodered map which is cpp stl data type and but first have to create map like this unodered_map <int, int > m and if we got the sec. element we just have to return index of elements and and if didn't we just have insert first element like this m[first] = i;
+in this approach we will use a single loop for choosing first element then we calculate the second element by using given target so second element will be second = target-first and then we have to choose first value by loop and then we will find the second element in unordered map which is cpp stl data type and but first have to create map like this unordered_map <int, int > m and if we got the sec. element we just have to return index of elements and and if didn't we just have insert first element like this m[first] = i;
 here m.find method is a game changer which have nearly constant time complexity and loop have ◯(n) complexity so overall time complexity will be ◯(n)
 
 Time Complexity ◯(n)
